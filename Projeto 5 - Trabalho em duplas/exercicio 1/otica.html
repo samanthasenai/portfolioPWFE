@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ótica</title>
+</head>
+<body>
+    <div class="caixa1">
+        
+        <div class="linha">
+            <div class="titulo">
+                <h1>Óticas SENAI</h1>
+            </div>
+            <h1>NÃO PERCA ESSA OFERTA!</h1>
+        </div>
+        <div class="lado">
+            <h2>Nosso óculos tem o valor de R$ 400,00 pórem estamos com uma promoção que sua idade será seu desconto, digite o ano de seu nascimento e ganhe seu desconto!</h2>
+            <input type="number" name="ano_nascimento" id="ano_nascimento">
+            <button onclick="cal_desconto()">DESCONTO</button>
+
+        </div>
+        <div class="lado">
+            <p id="resultado">Espere um momento...</p>
+            <p id="montante">O valor total do óculos será de R$ . . .</p>
+            <img src="oculos.gif" alt="">
+
+        </div>
+    </div>
+    <script>
+        function cal_desconto(){
+            ano_atual = Number (new Date().getFullYear()) - 1
+            ano_nasc = new Date(document.getElementById("ano_nascimento").value).getFullYear()
+            desconto = Number(ano_atual) - Number(ano_nasc)
+            document.getElementById('resultado').innerHTML = `O seu desconto será de ${desconto} %`
+            montante = 400 - (Number(desconto) * 4)
+            
+            document.getElementById('montante').innerHTML = `O valor total do óculos será de R$${Number(montante).toFixed(2)} `
+
+
+            // (Number(atual.value) * 1.16).toFixed(2)
+            // alert (desconto)
+
+        }
+    </script>
+</body>
+</html>

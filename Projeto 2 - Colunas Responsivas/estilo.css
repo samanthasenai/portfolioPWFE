@@ -1,0 +1,48 @@
+/* DOCUMENTO CSS */
+*{
+    margin:0;
+	padding: 0;
+	box-sizing: border-box;
+    border: 0px #000000 solid;
+    background-color: #f5f5dc;
+}
+ 
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.cl-25{
+    width: 24%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+
+img {
+    width: 100%;
+    border: 5px #000000 solid;
+    border-radius: 10px;
+    border-color: rgba(16, 11, 110, 0.995);
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+@media screen and (max-width: 1200px) {
+    .cl-25 {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cl-25{
+    width: 100%;
+    margin: 0;     
+    }
+}

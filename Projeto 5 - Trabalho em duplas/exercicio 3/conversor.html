@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Conversor</title>
+</head>
+<body>
+    <div class="box">
+        <div class="titulo">
+            <h1>Conversor de Centímetro para Metro</h1>
+        </div>
+        <div class="titulo">
+            <h1>Conversor de Metro para Centímetro</h1>
+        </div>
+
+        <div class="box50">
+            <h2>Digite quantos Centímetros você deseja converter:</h2>
+            <input type="number" name="CMS" id="CMS">
+            <br>
+            <button onclick="cal_cm_mts()">CALCULAR</button>
+            <h2 id="calculo">Esperando a medida. . .</h2>
+
+
+        </div>
+
+        <div class="box50">
+            <h2>Digite quantos Metros você deseja converter:</h2>
+            <input type="number" name="METROS" id="METROS">
+            <br>
+            <button onclick="cal_mts_cm()">CALCULAR</button>
+            <h2 id="calculo2">Esperando a medida. . .</h2>
+
+            
+        </div>
+
+    </div>
+    <script>
+        function cal_cm_mts(){
+            conta = Number(CMS.value) / 100
+            document.getElementById('calculo').innerHTML = `Você terá ${conta} Mts `
+        }
+        function cal_mts_cm(){
+            conta = Number(METROS.value) * 100
+            document.getElementById('calculo2').innerHTML = `Você terá ${conta} Cm `
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contagem Regressiva para o Aniversário</title>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="box">
+        
+    
+    <h1>Contagem Regressiva para o Aniversário!!</h1>
+    <p>Insira seu proximo aniversário: </p>
+    <input type="date" name="" id="nascimento">
+    <button onclick="atualizarContagemRegressiva()">Contar</button>
+    <div id="contador">Aqui vai o contador!</div>
+    </div>
+
+    <script>
+        const dataAniversario = new Date()
+
+        function atualizarContagemRegressiva() {
+            const agora = new Date(document.getElementById('nascimento').value)
+            const diferenca = agora - dataAniversario
+        
+            if (Math.floor(diferenca/(1000 * 60 * 60 * 24)) == -1) {
+                document.getElementById('contador').innerHTML = "Feliz Aniversário!"
+            } else if(diferenca > 0){
+                const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+                document.getElementById('contador').innerHTML = `Faltam: ${dias} dias e ${horas} horas!!`
+            }else{
+                document.getElementById('contador').innerHTML = "Seu aniversário já passou!"
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

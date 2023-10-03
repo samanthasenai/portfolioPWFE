@@ -1,0 +1,46 @@
+/* DOCUMENTO CSS */
+*{
+    margin:0;
+	padding: 0;
+	box-sizing: border-box;
+    border: 0px #000000 solid;
+    background-color: #ffffff;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.cl-20{
+    width: 20%;
+    height: auto;
+}
+.cl-50{
+    width: 55%;
+  
+}
+.cl-50 img{
+    width: 100%;
+}
+.cl-30{
+    width: 30%;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.miniaturas{
+    width: 100%;
+    height: auto;
+}
+img{
+    width: 100%
+}
+.botao{
+    width: 50%;
+    height: 40px;
+    border: 2px #00abff solid;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color:#00abff;
+    color: #ffffff;
+    margin-left: 100px;
+}

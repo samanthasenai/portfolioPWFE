@@ -1,0 +1,44 @@
+body {
+    background-color:   #d3d3d3;
+    color: rgb(0, 0, 0);
+    font: 16pt Arial;
+    text-align: center;
+    background-image: linear-gradient(to top, red, #ff6400 );
+}
+
+.box {
+    width: 40%;
+    height: 100%;
+    margin: 150px auto;
+    border: 5px #3b3c3c solid;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    text-align: center;
+    padding: 5%; 
+}
+
+input {
+    height: 40px;
+    width: 35%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+button {
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px 4px;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to top, red, #ff6400 );
+}
+.input{
+    background-color: #ffffff;
+    width: 50%;
+    font-size: medium;
+}
+h1{
+    margin: 0px auto; 
+}
+
+  

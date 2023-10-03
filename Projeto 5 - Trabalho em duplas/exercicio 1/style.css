@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+.caixa1{
+    border: 4px solid #ff6400;
+    height: auto;
+    width: 400px;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    border-radius: 15px;
+}
+/* .titulo{
+    height: auto;
+    width: 100%;
+    background-color: red;
+    font-size: large;
+    text-align: center;
+    border-radius: 1px;
+} */
+.lado{
+    height: 300px;
+    width: 50%;
+    background-color: white;
+    align-items: center;
+    padding: 1%;
+    text-align: center;
+    margin: auto;    
+    border-radius: 15px;
+    }
+.lado h1{
+    font-size: 22px;
+}
+.lado h2{
+    font-size: 20px;
+}
+#resultado{
+    color: red;
+    font-size: 15px;
+}
+.linha{
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    background-color: #ff6400;
+
+}
+#ano_nascimento, #resultado{
+    margin: 6% 0;
+}
+.lado img{
+    width: 100%;
+    margin: 20% 0;
+}
+#montante{
+    font-size: 20px;
+}
+.linha .titulo{
+    background-color: red;
+    border-radius: 8px;
+}
+button{
+    background-color:red;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
