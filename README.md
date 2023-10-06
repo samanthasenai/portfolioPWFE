@@ -1,4 +1,4 @@
-# Portfólio PWFE
+# Portfólio Programação Web Front-End
 Portfólio da disciplina Front-end
 ## Estrutura do Repositório 
 - Atividade 1 - Branding Board
