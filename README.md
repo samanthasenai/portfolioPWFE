@@ -1,5 +1,5 @@
 # portifolioPWFE
-Portifolio de disciplina Front-end
+Portifolio da disciplina Front-end
 ## Estrutura do Repositório 
 - Atividade 1 - Branding Board
 - Atividade 2 - Colunas Responsivas
